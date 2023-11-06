@@ -44,7 +44,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.12.1.0-08cfd6a7a70af58c172bc2c080820d19df00e6c2 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.12.1.0-c3687d954a49432e675f78765ab1af3c0a6662db powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <ul class="navList" id="allclasses_navbar_top">
@@ -848,24 +848,26 @@ extends <a href="X509CertificateCollection.html" title="class in system.security
 <h4>Export</h4>
 <pre class="methodSignature">public&nbsp;byte[]&nbsp;Export&#8203;(<a href="X509ContentType.html" title="class in system.security.cryptography.x509certificates">X509ContentType</a>&nbsp;contentType)
               throws java.lang.Throwable,
+                     <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                     <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
                      <a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                      <a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                      <a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                      <a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
                      <a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                      <a href="../../../FormatException.html" title="class in system">FormatException</a>,
-                     <a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
                      <a href="../CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 <dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../../FormatException.html" title="class in system">FormatException</a></code></dd>
-<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
 </dl>
 </li>
@@ -1033,7 +1035,8 @@ extends <a href="X509CertificateCollection.html" title="class in system.security
                    <a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
                    <a href="../CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
                    <a href="../../../runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a>,
-                   <a href="../../../io/IOException.html" title="class in system.io">IOException</a></pre>
+                   <a href="../../../io/IOException.html" title="class in system.io">IOException</a>,
+                   <a href="../../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -1051,6 +1054,7 @@ extends <a href="X509CertificateCollection.html" title="class in system.security
 <dd><code><a href="../CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
 <dd><code><a href="../../../runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a></code></dd>
 <dd><code><a href="../../../io/IOException.html" title="class in system.io">IOException</a></code></dd>
+<dd><code><a href="../../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1077,7 +1081,8 @@ extends <a href="X509CertificateCollection.html" title="class in system.security
                    <a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
                    <a href="../CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
                    <a href="../../../runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a>,
-                   <a href="../../../io/IOException.html" title="class in system.io">IOException</a></pre>
+                   <a href="../../../io/IOException.html" title="class in system.io">IOException</a>,
+                   <a href="../../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -1095,6 +1100,7 @@ extends <a href="X509CertificateCollection.html" title="class in system.security
 <dd><code><a href="../CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
 <dd><code><a href="../../../runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a></code></dd>
 <dd><code><a href="../../../io/IOException.html" title="class in system.io">IOException</a></code></dd>
+<dd><code><a href="../../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1118,7 +1124,9 @@ extends <a href="X509CertificateCollection.html" title="class in system.security
                    <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                    <a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
                    <a href="../CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
-                   <a href="../../../io/IOException.html" title="class in system.io">IOException</a></pre>
+                   <a href="../../../runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a>,
+                   <a href="../../../io/IOException.html" title="class in system.io">IOException</a>,
+                   <a href="../../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -1134,7 +1142,9 @@ extends <a href="X509CertificateCollection.html" title="class in system.security
 <dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 <dd><code><a href="../CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../../../runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a></code></dd>
 <dd><code><a href="../../../io/IOException.html" title="class in system.io">IOException</a></code></dd>
+<dd><code><a href="../../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1158,7 +1168,9 @@ extends <a href="X509CertificateCollection.html" title="class in system.security
                    <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                    <a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
                    <a href="../CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
-                   <a href="../../../io/IOException.html" title="class in system.io">IOException</a></pre>
+                   <a href="../../../runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a>,
+                   <a href="../../../io/IOException.html" title="class in system.io">IOException</a>,
+                   <a href="../../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -1174,7 +1186,9 @@ extends <a href="X509CertificateCollection.html" title="class in system.security
 <dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 <dd><code><a href="../CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../../../runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a></code></dd>
 <dd><code><a href="../../../io/IOException.html" title="class in system.io">IOException</a></code></dd>
+<dd><code><a href="../../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1201,7 +1215,8 @@ extends <a href="X509CertificateCollection.html" title="class in system.security
                    <a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
                    <a href="../CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
                    <a href="../../../runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a>,
-                   <a href="../../../io/IOException.html" title="class in system.io">IOException</a></pre>
+                   <a href="../../../io/IOException.html" title="class in system.io">IOException</a>,
+                   <a href="../../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -1219,6 +1234,7 @@ extends <a href="X509CertificateCollection.html" title="class in system.security
 <dd><code><a href="../CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
 <dd><code><a href="../../../runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a></code></dd>
 <dd><code><a href="../../../io/IOException.html" title="class in system.io">IOException</a></code></dd>
+<dd><code><a href="../../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1238,13 +1254,13 @@ extends <a href="X509CertificateCollection.html" title="class in system.security
                    <a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                    <a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                    <a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                   <a href="../../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                    <a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                   <a href="../../../RankException.html" title="class in system">RankException</a>,
-                   <a href="../../../FormatException.html" title="class in system">FormatException</a>,
                    <a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
                    <a href="../CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
                    <a href="../../../runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a>,
-                   <a href="../../../io/IOException.html" title="class in system.io">IOException</a></pre>
+                   <a href="../../../io/IOException.html" title="class in system.io">IOException</a>,
+                   <a href="../../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -1256,13 +1272,13 @@ extends <a href="X509CertificateCollection.html" title="class in system.security
 <dd><code><a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
 <dd><code><a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../RankException.html" title="class in system">RankException</a></code></dd>
-<dd><code><a href="../../../FormatException.html" title="class in system">FormatException</a></code></dd>
 <dd><code><a href="../../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 <dd><code><a href="../CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
 <dd><code><a href="../../../runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a></code></dd>
 <dd><code><a href="../../../io/IOException.html" title="class in system.io">IOException</a></code></dd>
+<dd><code><a href="../../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1469,7 +1485,7 @@ extends <a href="X509CertificateCollection.html" title="class in system.security
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.12.1.0-08cfd6a7a70af58c172bc2c080820d19df00e6c2 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.12.1.0-c3687d954a49432e675f78765ab1af3c0a6662db powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <ul class="navList" id="allclasses_navbar_bottom">
